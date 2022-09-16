@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { createContext } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Header from './components/Header';
 import Post from './components/Post';
 
@@ -18,6 +20,7 @@ function App() {
     <ThemeContext.Provider value={value}>
       <Header />
       <Post />
+      <ToastContainer />
     </ThemeContext.Provider>
   );
 }
