@@ -1,7 +1,25 @@
-import './App.css';
+import { useState } from 'react';
+import { createContext } from 'react';
+import Header from './components/Header';
+import Post from './components/Post';
+
+// Create Context
+export const ThemeContext = createContext();
 
 function App() {
-  return <div className='App'></div>;
+  const [isDark, setIsDark] = useState(true);
+
+  const value = {
+    isDark,
+    setIsDark,
+  };
+
+  return (
+    <ThemeContext.Provider value={value}>
+      <Header />
+      <Post />
+    </ThemeContext.Provider>
+  );
 }
 
 export default App;
