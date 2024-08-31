@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-  --background-body: #292929;
-  --background-content: #1d1d1d;
-  --text-color: #e5e5e5;
+  --background-body: #dfdada;
+  --background-content: #fff;
+  --text-color: #070404;
 }
 
 body {

@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import { NavLink } from 'react-router-dom';
 import { ThemeContext } from '../App';
 import { LogoIcon, MoonIcon, SunIcon } from './assets/icons';
 
@@ -17,6 +18,15 @@ const Header = () => {
             {isDark ? <MoonIcon /> : <SunIcon />}
           </button>
         </div>
+        <nav className='nav'>
+          <NavLink 
+            to="/" 
+            className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+          >
+            Home
+          </NavLink>
+        
+        </nav>
       </div>
     </header>
   );
