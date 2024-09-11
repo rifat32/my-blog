@@ -22,7 +22,8 @@ function App() {
   const markdownFiles = [
     { title: 'Helper Function', file: 'article1.md' },
     { title: 'Where Exists', file: 'article2.md' },
-    { title: 'Post 3', file: 'article3.md' },
+    { title: 'Clean code', file: 'article3.md' },
+    { title: 'Github', file: 'article4.md' },
   ];
 
   return (
